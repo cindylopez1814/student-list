@@ -1,34 +1,35 @@
 <section class="container">
   <div class="row">
-    <div class="media">
-      <img src="../../assets/img/pexels-photo-756453.jpeg"class="mr-3" alt="perfil">
+    <div class="media col-sm-4">
+      <img src="../../assets/img/pexels-photo-756453.jpeg" class="mr-3" alt="perfil">
       <h6 class="media-body">Maria Fernanda Gutierrez</h6>
     </div>
-  </div>
 
-  <div class="row">
-    <h6 class="col-12 col">
-      Skills
-    </h6>
-    <div class="col-12">
-      <app-remove></app-remove>
-    </div>
-    <div class="col-12">
-      <ng-template #popContent>
-        <form (ngSubmit)="addNewSkill()" [formGroup]="formSkill">
-          <input type="text" class="form-control" formControlName="newSkill">
-          <div class="row p-1 mx-auto">
-            <button type="submit" class="btn btn-lg btn-primary btn-sm rounded col-5 m-1">Add</button>
-            <button type="button" class="btn btn-lg btn-secondary btn-sm rounded col-5 m-1">Close</button>
-          </div>
-        </form>
-      </ng-template>
+    <div class="col-sm-8">
+      <h6 class="col-12 col">
+        Skills
+      </h6>
+      <div class="col-12">
+        <app-remove></app-remove>
+      </div>
+      <div class="col-12">
+        <ng-template #popContent>
+          <form (ngSubmit)="addNewSkill()" [formGroup]="formSkill">
+            <input type="text" class="form-control" formControlName="newSkill">
+            <div class="row p-1 mx-auto">
+              <button type="submit" class="btn btn-lg btn-primary btn-sm rounded col-5 m-1">Add</button>
+              <button type="button" class="btn btn-lg btn-secondary btn-sm rounded col-5 m-1">Close</button>
+            </div>
+          </form>
+        </ng-template>
 
-      <ng-template #popTitle>
-        <p>Add new Skill</p>
-      </ng-template>
+        <ng-template #popTitle>
+          <p>Add new Skill</p>
+        </ng-template>
 
-      <button type="button" class="btn btn-light" placement="bottom" [ngbPopover]="popContent" [popoverTitle]="popTitle" #popover3="ngbPopover" [autoClose]="'outside'">Añadir +</button>
+        <p [ngbPopover]="popContent" [popoverTitle]="popTitle" #popover3="ngbPopover"
+          [autoClose]="'outside'">+ añadir<p>
+      </div>
     </div>
   </div>
 </section>

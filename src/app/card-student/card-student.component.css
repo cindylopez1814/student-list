@@ -1,0 +1,22 @@
+img{
+ height: 15vh;
+}
+
+section {
+  border: black 0.5px solid;
+  border-radius: 6px;
+  margin: 1% 5%;
+  width: 90%;
+}
+
+.media {
+  padding: 2%;
+}
+
+.col-sm-8{
+  padding: 2%;
+}
+
+p{
+  margin-bottom: 0%;
+}
