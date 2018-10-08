@@ -11,7 +11,7 @@ export const environment = {
     projectId: "student-list-1e554",
     storageBucket: "student-list-1e554.appspot.com",
     messagingSenderId: "243782798647"
-  };
+  }
 };
 
 /*
